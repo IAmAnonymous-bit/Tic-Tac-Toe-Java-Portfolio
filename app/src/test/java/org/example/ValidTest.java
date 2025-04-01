@@ -118,7 +118,7 @@ class ValidTest
     @Test
     void filled1()
     {
-        b.makeMove(1, "X");
+        b.makeMove('1', "X");
         assertEquals(v.cellEmpty(b, '1'), false);
 
     }
@@ -133,7 +133,7 @@ class ValidTest
     @Test
     void filled2()
     {
-        b.makeMove(2, "X");
+        b.makeMove('2', "X");
         assertEquals(v.cellEmpty(b, '2'), false);
 
     }
@@ -148,7 +148,7 @@ class ValidTest
     @Test
     void filled3()
     {
-        b.makeMove(3, "X");
+        b.makeMove('3', "X");
         assertEquals(v.cellEmpty(b, '3'), false);
 
     }
@@ -163,7 +163,7 @@ class ValidTest
     @Test
     void filled4()
     {
-        b.makeMove(4, "X");
+        b.makeMove('4', "X");
         assertEquals(v.cellEmpty(b, '4'), false);
 
     }
@@ -178,7 +178,7 @@ class ValidTest
     @Test
     void filled5()
     {
-        b.makeMove(5, "X");
+        b.makeMove('5', "X");
         assertEquals(v.cellEmpty(b, '5'), false);
 
     }
@@ -193,7 +193,7 @@ class ValidTest
     @Test
     void filled6()
     {
-        b.makeMove(6, "X");
+        b.makeMove('6', "X");
         assertEquals(v.cellEmpty(b, '6'), false);
 
     }
@@ -208,7 +208,7 @@ class ValidTest
     @Test
     void filled7()
     {
-        b.makeMove(7, "X");
+        b.makeMove('7', "X");
         assertEquals(v.cellEmpty(b, '7'), false);
 
     }
@@ -223,7 +223,7 @@ class ValidTest
     @Test
     void filled8()
     {
-        b.makeMove(8, "X");
+        b.makeMove('8', "X");
         assertEquals(v.cellEmpty(b, '8'), false);
 
     }
@@ -238,7 +238,7 @@ class ValidTest
     @Test
     void filled9()
     {
-        b.makeMove(9, "X");
+        b.makeMove('9', "X");
         assertEquals(v.cellEmpty(b, '9'), false);
 
     }

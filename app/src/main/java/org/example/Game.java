@@ -8,20 +8,22 @@ public class Game
     private Check c;
     private Displayer d;
     private Move m;
+    private Result r;
     private Validator v;
     private String player1;
     private String player2;
 
-    public Game(Again a, Board b, Check c, Displayer d, Move m, Validator v, String p1, String p2)
+    public Game(Again a, Board b, Check c, Displayer d, Move m, Result r, Validator v)
     {
         this.a = a;
         this.b = b;
         this.c = c;
         this.d = d;
         this.m = m;
+        this.r = r;
         this.v = v;
-        this.player1 = p1;
-        this.player2 = p2;
+        this.player1 = "X";
+        this.player2 = "O";
 
     }
 
@@ -39,7 +41,6 @@ public class Game
             {
                 m.enterMove(b, v, s, currentPlayer);
                 d.display(b);
-                System.out.println(c.currentState(b));
 
                 if (currentPlayer == player1)
                 {
@@ -52,6 +53,8 @@ public class Game
 
             }
 
+            System.out.println(r.getResult(c.currentState(b)));
+            r.getLog();
             gameGoing = a.playAgain(s);
 
             if (gameGoing)
@@ -64,7 +67,9 @@ public class Game
         }
 
         s.close();
+        r.writeLog();
         System.out.println("Thank You For Playing TIC-TAC-TOE!");
+        System.out.println( "\n" + "To see final statistics, view disk.txt!");
 
     }
 
