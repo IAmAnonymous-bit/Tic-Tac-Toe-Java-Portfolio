@@ -59,6 +59,15 @@ public class Game
 
             if (gameGoing)
             {
+                if (c.currentState(b) == player1)
+                {
+                    currentPlayer = player2;
+
+                } else if (c.currentState(b) == player2) {
+                    currentPlayer = player1;
+
+                }
+
                 b.clear();
                 d.display(b);
 
