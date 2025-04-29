@@ -13,12 +13,14 @@ public class App
   {
     Again a = new Again();
     Board b = new Board();
-    Check c = new Check();
+    Check c1 = new Check();
+    Computer c2 = new Computer();
     Displayer d = new Displayer();
     Move m = new Move();
     Result r = new Result();
+    Select s = new Select();
     Validator v = new Validator();
-    Game g = new Game(a, b, c, d, m, r, v);
+    Game g = new Game(a, b, c1, c2, d, m, r, s, v);
 
     g.playGame();
         
